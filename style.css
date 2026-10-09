@@ -172,6 +172,48 @@ aside a:hover {
   margin: 0;
 }
 
+/* Настройки съёмки (CSS Grid) */
+.settings-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 16px;
+}
+
+.setting-item {
+  min-width: 0;
+  padding: 18px;
+  overflow-wrap: anywhere;
+  background-color: var(--color-blue-light);
+  border: 1px solid #b7c9d9;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.setting-icon {
+  display: inline-block;
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.setting-item h3 {
+  margin: 0 0 6px 0;
+  color: var(--color-blue);
+  font-size: 18px;
+  hyphens: auto;
+}
+
+.setting-value {
+  margin: 0 0 8px 0;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--color-blue-dark);
+}
+
+.setting-desc {
+  margin: 0;
+  font-size: 14px;
+}
+
 /* Форма обратной связи */
 form {
   display: flex;
@@ -234,6 +276,10 @@ footer {
 @media (min-width: 600px) {
   .project-card {
     flex-basis: calc((100% - 16px) / 2);
+  }
+
+  .settings-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
