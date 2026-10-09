@@ -124,6 +124,54 @@ aside a:hover {
   color: var(--color-text);
 }
 
+/* Карточки фотопроектов (Flexbox) */
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.project-card {
+  flex: 0 0 100%;
+  min-width: 0;
+  background-color: var(--color-blue-light);
+  border: 1px solid #b7c9d9;
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-preview {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+}
+
+.project-body {
+  padding: 16px;
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-body h3 {
+  margin: 0 0 6px 0;
+  color: var(--color-blue);
+}
+
+.project-location {
+  margin: 0 0 10px 0;
+  font-weight: 600;
+  color: var(--color-blue-dark);
+}
+
+.project-body p:last-child {
+  margin: 0;
+}
+
 /* Форма обратной связи */
 form {
   display: flex;
@@ -182,3 +230,15 @@ footer {
   text-align: center;
 }
 
+/* Адаптивность и медиазапросы */
+@media (min-width: 600px) {
+  .project-card {
+    flex-basis: calc((100% - 16px) / 2);
+  }
+}
+
+@media (min-width: 900px) {
+  .project-card {
+    flex-basis: calc((100% - 32px) / 3);
+  }
+}
