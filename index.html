@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Портфолио Елены Шалыгиной — фотографа и визуального сторителлера: навыки, фотопроекты и параметры съёмки.">
+  <title>О себе - Елена Шалыгина</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    aside a { color: #164f83; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Елена Шалыгина - О себе</h1>
+    <div class="photo">
+      <img src="images/avatar.jpg" alt="Портрет Елены" width="150" height="150">
+      <span class="photo-label" style="z-index: 10;">Фото</span>
+    </div>
+  </header>
+
+  <nav aria-label="Навигация по сайту">
+    <a href="#skills">Навыки</a>
+    <a href="#direction">Направление</a>
+    <a href="#contact">Обратная связь</a>
+  </nav>
+
+  <main>
+    <section id="skills">
+      <h2>Навыки</h2>
+      <ul>
+        <li>Композиция и кадрирование</li>
+        <li>Работа со студийным светом</li>
+        <li>Постобработка и ретушь</li>
+      </ul>
+    </section>
+
+    <aside id="direction">
+      <p>Любимое направление: стрит-фотография. <a href="#projects">Посмотреть фотопроекты</a></p>
+    </aside>
+
+    <section id="contact">
+      <h2>Обратная связь</h2>
+      <form action="#" method="post">
+        <label for="name">Имя</label>
+        <input id="name" type="text" name="name" placeholder="Введите ваше имя">
+        <label for="email">Email</label>
+        <input id="email" type="email" name="email" placeholder="Введите ваш email">
+        <label for="message">Сообщение</label>
+        <textarea id="message" name="message" placeholder="Введите ваше сообщение" rows="4"></textarea>
+        <button type="submit">Отправить</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Елена Шалыгина</p>
+  </footer>
+</body>
+</html>
